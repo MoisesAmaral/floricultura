@@ -8,6 +8,70 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Estilos do menu hamburger */
+
+
+.hamburger-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  display: none; /* Inicialmente oculto em telas maiores */
+}
+
+.nav-menu {
+  display: block;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu ul li {
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #55a63f;
+}
+
+/* Estilos responsivos para o menu hamburger */
+@media (max-width: 768px) {
+  .hamburger-button {
+      display: block; /* Mostrar o botão em telas menores */
+  }
+
+  .nav-menu {
+      display: none; /* Ocultar o menu em telas menores */
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1000;
+  }
+
+  .nav-menu.active {
+      display: block; /* Mostrar o menu quando o botão é clicado */
+  }
+
+  .nav-menu ul {
+      flex-direction: column;
+      padding: 20px;
+  }
+}
+
 /* Estilos do header fixo */
 header {
   position: fixed;
