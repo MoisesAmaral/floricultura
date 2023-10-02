@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos gerais */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos do header fixo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, #55a63f, #448932);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Estilos das seções */
+.section {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+
+.section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #55a63f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #448932;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(to right, #55a63f, #448932);
+  color: #fff;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  header {
+      padding: 5px 0;
+  }
+
+  .section {
+      padding: 60px 0;
+  }
+
+  .section h1 {
+      font-size: 28px;
+  }
+
+  .section p {
+      font-size: 16px;
+  }
+
+  button {
+      padding: 8px 16px;
+      font-size: 16px;
+  }
+
+  /* Estilos do grid de imagens responsivo */
+  .image-grid {
+      text-align: center;
+  }
+
+  .image-carousel {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      margin: 20px 0;
+  }
+
+  .image-carousel img {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      width: 80vw;
+      max-width: 400px;
+      margin-right: 20px;
+  }
+
+  .prev-button,
+  .next-button {
+      background-color: #55a63f;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 24px;
+      cursor: pointer;
+  }
+
+  .prev-button {
+      margin-right: 10px;
+  }
+
+  .next-button:hover,
+  .prev-button:hover {
+      background-color: #448932;
+  }
+}
+
+/* Estilos do carrossel */
+.image-grid {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.image-carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 20px 0;
+}
+
+.image-carousel img {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 80vw;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.prev-button,
+.next-button {
+  background-color: #55a63f;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-button {
+  margin-right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #448932;
+}
