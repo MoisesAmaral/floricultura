@@ -5,7 +5,7 @@
 }
 /* Estilos gerais */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; 
 }
 
 /* Estilos do menu hamburger */
@@ -116,7 +116,7 @@ nav a:hover {
 .section {
   text-align: center;
   padding: 100px 0;
-  background-color: #f5f5f5;
+  
 }
 
 .section h1 {
@@ -263,4 +263,14 @@ footer {
 .prev-button:hover,
 .next-button:hover {
   background-color: #448932;
+}
+
+.container .img {
+  /*deixar por baixo de tudo  */
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  z-index: -1;
 }
